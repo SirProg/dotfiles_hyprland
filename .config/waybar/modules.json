@@ -1,0 +1,143 @@
+{
+	// Modules left
+	"hyprland/window":{
+		"max-length": 60,
+		"rewrite": {
+			"(.*) - kitty": "  [$1]",
+			"(.*) - Mozilla Firefox": " $1"
+		},
+		"separate-outputs": true
+	},
+	
+	// Modules Center
+	"hyprland/workspaces": {
+		"on-scroll-up": "hyprctl dispatch workspace r-1",
+		"on-scroll-down": "hyprctl dispatch workspace r+1",
+		"on-click": "activate",
+		"active-only": true,
+		"format": "{}",
+		"format-icons": {
+			"urgent": "",
+			"active": "",
+			"default": ""
+		},
+		"persistent-workspaces": {
+			"*": 7
+		}
+	},
+
+
+	// Modules Right
+	
+	//Search with wofi
+	"custom/search": {
+		"format": "{icon} search",
+		"format-icons": {"default": ""},
+		"on-click": "wofi --show drun"		
+	},
+	
+
+	// PulseAudio
+		
+	"pulseaudio":{
+		"format": "{icon} {volume}%",
+		"format-bluetooth": "{volume}% {icon} {format_source}",
+		"format-bluetooth-muted": " {icon} {format_source}",
+		"format-muted": " {format_source}",
+		"format-source": "{volume}% ",
+		"format-source-muted": "{volume}%  ",
+		"format-icons":{
+			"headphone": " ",
+			"hands-free": " ",
+			"headset": " ",
+			"phone": " ",
+			"portable": "",
+			"car": " ",
+			"default": [
+				"",
+				" ",
+				" "
+			]	
+		}, 
+		"on-click": "pavucontrol"
+	},
+	
+	//Bluetooth
+	"custom/bluetooth": {
+		"exec": "~/.config/waybar/scripts/bluetooth-status.sh",
+		"interval": 5,
+		"on-click": "blueman-manager",
+		"tooltip": true,
+		"format": {}
+	},
+
+	// Network
+	"network": {
+    		"format-wifi": "  {essid}({signalStrength}%)",
+    		"format-ethernet": " {ipaddr}",
+    		"format-disconnected": " Desconectado",
+    		"tooltip-format": "{ifname}: {ipaddr}/{cidr} • {gwaddr}"
+  	},
+
+	//Battery
+	"battery": {
+    		"interval": 1,
+    		"states": {
+      			"good": 80,
+      			"warning": 30,
+      			"critical": 15
+    		},
+    		"format": "{icon} {capacity}%",
+    		"format-charging": "  {capacity}%",
+    		"format-plugged": "  {capacity}%",
+    		"format-alt": "{icon}  {time}",
+    		"format-icons": [
+      			" ",
+      			" ",
+      			" ",
+      			" ",
+      			" "
+    		]
+  	},
+
+	// Group Hardware
+	"group/hardware": {
+		"orientation": "inherit",
+    		"drawer": {
+      			"transition-duration": 300,
+      			"children-class": "not-memory",
+      			"transition-left-to-right": false
+    		},
+    		"modules": [
+      			"disk",
+      			"cpu",
+      			"memory"
+    		]
+  	},	
+	
+	//Disk
+	"disk": {
+    		"interval": 30,
+    		"format": " D {percentage_used}% "
+    	},		
+	
+	//CPU
+	"cpu": {
+    		"format": " / C {usage}% "
+    	},
+
+	//Memory
+	"memory": {
+    		"format": " / M {}% "
+  	},
+
+
+	//Exit
+	"custom/exit": {
+		"format": "", // Icono de apagado (Font Awesome)
+		"on-click": "~/.config/waybar/scripts/powermenu/powermenu.sh",
+  		"tooltip": true,
+  		"tooltip-format": "Menú de apagado"
+	}
+		
+}

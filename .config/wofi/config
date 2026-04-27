@@ -1,0 +1,6 @@
+[config]
+show=drun
+columns=1
+width=1000
+height=500
+location=center

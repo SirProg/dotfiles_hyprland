@@ -1,0 +1,38 @@
+# Secrets y datos privados
+.ssh/
+.gnupg/
+*.key
+*.pem
+
+# Historial de shell
+.bash_history
+.zsh_history
+
+# Caché y datos generados
+.cache/
+__pycache__/
+*.pyc
+
+# Tokens y credenciales
+.npmrc
+.netrc
+auth.json
+credentials*
+
+# Datos de aplicaciones que no son configuración
+.config/Code/
+.config/obs-studio/
+.config/zoom/
+.config/unity3d/
+.config/JetBrains/
+.config/libreoffice/
+
+# Archivos locales de nvim (lock file puede incluirse si se quiere reproducibilidad)
+# .config/nvim/lazy-lock.json
+
+# Archivos temporales
+*.tmp
+*.swp
+*.swo
+*~
+.DS_Store

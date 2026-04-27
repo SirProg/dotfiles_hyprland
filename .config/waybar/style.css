@@ -1,0 +1,93 @@
+/* ~/.config/waybar/style.css */
+
+/* Barra principal */
+window#waybar {
+    background: rgba(18, 18, 26, 0.85); /* Fondo oscuro translúcido */
+    color: #cdd6f4;                     /* Texto suave */
+    font-family: "Fira Code", "Font Awesome 6 Free", "Noto Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 12px;
+    margin: 8px 12px;
+    padding: 4px 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Módulos */
+#workspaces,
+#window,
+#network,
+#pulseaudio,
+#battery,
+#disk,
+#cpu,
+#memory,
+#custom-search,
+#custom-bluetooth,
+#custom-exit,
+#group-hardware {
+    padding: 0 10px;
+    margin: 0 4px;
+    border-radius: 8px;
+}
+
+/* Workspaces (espacios de trabajo) */
+#workspaces button {
+    padding: 4px 10px;
+    margin: 0 3px;
+    border-radius: 6px;
+    background: transparent;
+    color: #a6adc8;
+    border: none;
+}
+
+#workspaces button.active {
+    background: #89b4fa;
+    color: #1e1e2e;
+    font-weight: 600;
+}
+
+#workspaces button:hover {
+    background: #585b70;
+    color: #ffffff;
+}
+
+/* Módulos interactivos (al hacer clic) */
+#network,
+#pulseaudio,
+#battery,
+#custom-search,
+#custom-bluetooth,
+#custom-exit {
+    transition: background 0.2s ease;
+}
+
+#network:hover,
+#pulseaudio:hover,
+#battery:hover,
+#custom-search:hover,
+#custom-bluetooth:hover,
+#custom-exit:hover {
+    background: rgba(94, 129, 172, 0.25);
+    border-radius: 8px;
+}
+
+/* Grupo de hardware (CPU, RAM, Disco) */
+#group-hardware {
+    background: rgba(40, 44, 63, 0.4);
+    padding: 0 8px;
+    border-radius: 8px;
+}
+
+/* Tooltip (opcional, si usas tooltips) */
+tooltip {
+    background: rgba(30, 30, 46, 0.95);
+    color: #cdd6f4;
+    border: 1px solid #5e81ac;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 13px;
+}
+
+/* Separadores sutiles (opcional) */
+/* Puedes añadir | entre módulos si lo deseas, pero en minimalismo, mejor sin */

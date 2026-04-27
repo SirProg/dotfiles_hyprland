@@ -1,0 +1,42 @@
+window {
+    margin: 0px;
+    border: 2px solid #5e81ac;
+    background-color: #2e3440;
+    border-radius: 10px;
+    font-family: "Fira Code", "Font Awesome 6 Free";
+    font-size: 16px;
+	color: "#000000"
+}
+
+#input {
+    margin: 5px;
+    border: none;
+    color: #eceff4;
+    background-color: #3b4252;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+#inner-box {
+    margin: 5px;
+}
+
+#outer-box {
+    margin: 5px;
+}
+
+#scroll {
+    margin: 0px;
+}
+
+button {
+    margin: 3px;
+    padding: 8px;
+    color: #eceff4;
+    background-color: #4c566a;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #5e81ac;
+}
