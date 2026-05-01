@@ -33,6 +33,7 @@ link ".bashrc"
 link ".zshrc"
 link ".bash_profile"
 link ".profile"
+link ".bash_aliases"
 
 echo ""
 echo "=== .config ==="

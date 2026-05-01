@@ -1,0 +1,13 @@
+/* styles/exit.css — custom/exit (power menu trigger) */
+
+#custom-exit {
+    color: #f38ba8;
+    font-size: 15px;
+    padding: 2px 10px;
+    border-radius: 8px;
+}
+
+#custom-exit:hover {
+    background: rgba(243, 139, 168, 0.18);
+    color: #ff94b0;
+}

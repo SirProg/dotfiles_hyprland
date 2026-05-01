@@ -1,27 +1,22 @@
 {
 	//Position top
+  "position": "top",
 	"layer": "top",
-	"margin-top": 14,
-	"margin-bottom": 0,
-	
-	"layer": "top",
-	"height": "30",
-	"margin-left": 0,
-	"margin-right": 0,
-	"spacing": 0,
+	//"margin-left": 0,
+	//"margin-right": 0,
+	"spacing": 5,
 	
 	//Load modules
 	"include": ["~/.config/waybar/modules.json"],
 
 	//Modules Left
 	"modules-left": [
-		"hyprland/window"
+    "hyprland/workspaces"
 	],
 
 	//Modules Center
 	"modules-center": [
-		"clock",
-		"hyprland/workspaces"
+		"clock"
 	],
 
 	//Modules Right
@@ -34,14 +29,7 @@
 		"battery",
 		"group/hardware",
 		"custom/exit"
-	],
-	
-	
-	//Group Hardware
-	"group/hardware": {
-		"orientation": "horizontal",
-		"modules": ["disk", "cpu", "memory"]
-	}
-	
+	]
+
 }
 

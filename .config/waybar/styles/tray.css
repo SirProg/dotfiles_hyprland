@@ -1,0 +1,16 @@
+/* styles/tray.css — system tray */
+
+#tray {
+    padding: 2px 8px;
+    margin: 2px 3px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background: rgba(243, 139, 168, 0.15);
+    border-radius: 6px;
+}

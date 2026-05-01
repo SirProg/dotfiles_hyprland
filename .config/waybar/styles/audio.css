@@ -1,0 +1,14 @@
+/* styles/audio.css — pulseaudio */
+
+#pulseaudio {
+    color: #94e2d5;
+}
+
+#pulseaudio.muted {
+    color: #6c7086;
+    background: rgba(108, 112, 134, 0.12);
+}
+
+#pulseaudio.bluetooth {
+    color: #89b4fa;
+}

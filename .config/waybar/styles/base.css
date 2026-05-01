@@ -1,0 +1,46 @@
+/* styles/base.css — bar window & shared module rules */
+
+/* Catppuccin Mocha palette
+   base:    #1e1e2e   surface0: #313244   text:    #cdd6f4
+   mantle:  #181825   surface1: #45475a   subtext: #a6adc8
+   crust:   #11111b   surface2: #585b70   overlay: #6c7086
+   blue:    #89b4fa   green:    #a6e3a1   red:     #f38ba8
+   lavender:#b4befe   yellow:   #f9e2af   peach:   #fab387
+   mauve:   #cba6f7   teal:     #94e2d5   sky:     #89dceb
+*/
+
+window#waybar {
+    background: #313244;
+    color: #cdd6f4;
+    font-family: "Fira Code", "Font Awesome 6 Free", "Noto Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 0 0 10px 10px;
+    margin: 8px 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* Every right-side module gets pill shape and a shared hover */
+#custom-search,
+#pulseaudio,
+#custom-bluetooth,
+#tray,
+#network,
+#battery,
+#group-hardware,
+#disk,
+#custom-exit {
+    padding: 2px 10px;
+    margin: 2px 3px;
+    border-radius: 8px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+#custom-search:hover,
+#pulseaudio:hover,
+#custom-bluetooth:hover,
+#network:hover,
+#battery:hover,
+#custom-exit:hover {
+    background: rgba(137, 180, 250, 0.15);
+}

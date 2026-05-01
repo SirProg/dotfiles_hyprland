@@ -1,25 +1,16 @@
 {
-	// Modules left
-	"hyprland/window":{
-		"max-length": 60,
-		"rewrite": {
-			"(.*) - kitty": "  [$1]",
-			"(.*) - Mozilla Firefox": " $1"
-		},
-		"separate-outputs": true
-	},
 	
-	// Modules Center
+	// Modules Left
 	"hyprland/workspaces": {
 		"on-scroll-up": "hyprctl dispatch workspace r-1",
 		"on-scroll-down": "hyprctl dispatch workspace r+1",
 		"on-click": "activate",
 		"active-only": true,
-		"format": "{}",
+		"format": "{icon}",
 		"format-icons": {
 			"urgent": "",
-			"active": "",
-			"default": ""
+			"active": " ",
+			"default": " "
 		},
 		"persistent-workspaces": {
 			"*": 7
@@ -68,14 +59,14 @@
 		"interval": 5,
 		"on-click": "blueman-manager",
 		"tooltip": true,
-		"format": {}
+		"format": "{}"
 	},
 
 	// Network
 	"network": {
-    		"format-wifi": "  {essid}({signalStrength}%)",
+    		"format-wifi": "   {essid}",
     		"format-ethernet": " {ipaddr}",
-    		"format-disconnected": " Desconectado",
+    		"format-disconnected": " Disconnected",
     		"tooltip-format": "{ifname}: {ipaddr}/{cidr} • {gwaddr}"
   	},
 
@@ -109,28 +100,16 @@
       			"transition-left-to-right": false
     		},
     		"modules": [
-      			"disk",
-      			"cpu",
-      			"memory"
+      			"disk"
     		]
   	},	
 	
 	//Disk
 	"disk": {
     		"interval": 30,
-    		"format": " D {percentage_used}% "
+    		"format": "  {percentage_used}% "
     	},		
 	
-	//CPU
-	"cpu": {
-    		"format": " / C {usage}% "
-    	},
-
-	//Memory
-	"memory": {
-    		"format": " / M {}% "
-  	},
-
 
 	//Exit
 	"custom/exit": {

@@ -1,0 +1,13 @@
+/* styles/bluetooth.css — custom/bluetooth */
+
+#custom-bluetooth {
+    color: #89b4fa;
+}
+
+#custom-bluetooth.off {
+    color: #6c7086;
+}
+
+#custom-bluetooth.connected {
+    color: #89dceb;
+}

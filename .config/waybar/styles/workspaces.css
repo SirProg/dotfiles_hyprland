@@ -1,0 +1,37 @@
+/* styles/workspaces.css — hyprland/workspaces */
+
+#workspaces {
+    margin: 2px 4px;
+    padding: 0 4px;
+    border-radius: 10px;
+    /*background: ;*/
+}
+
+#workspaces button {
+    padding: 3px 10px;
+    margin: 2px 2px;
+    border-radius: 6px;
+    background: transparent;
+    color: #6c7086;
+    border: none;
+    font-size: 14px;
+    transition: background 0.2s ease, color 0.2s ease;
+    box-shadow: none;
+    min-width: 18px;
+}
+
+#workspaces button.active {
+    background: #45475a;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+#workspaces button.urgent {
+    background: #f38ba8;
+    color: #1e1e2e;
+}
+
+#workspaces button:hover {
+    background: rgba(137, 180, 250, 0.2);
+    color: #cdd6f4;
+}

@@ -1,0 +1,14 @@
+/* styles/search.css — custom/search (wofi launcher) */
+
+#custom-search {
+    color: #cba6f7;
+    background: rgba(203, 166, 247, 0.1);
+    padding: 2px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+#custom-search:hover {
+    background: rgba(203, 166, 247, 0.22);
+    color: #d0b0ff;
+}

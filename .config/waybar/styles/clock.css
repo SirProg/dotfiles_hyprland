@@ -1,0 +1,10 @@
+/* styles/clock.css — center clock */
+
+#clock {
+    padding: 2px 14px;
+    border-radius: 8px;
+    color: #b4befe;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    background: rgba(180, 190, 254, 0.08);
+}

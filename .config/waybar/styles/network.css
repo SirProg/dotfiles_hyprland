@@ -1,0 +1,18 @@
+/* styles/network.css — network */
+
+#network {
+    color: #a6e3a1;
+}
+
+#network.disconnected {
+    color: #f38ba8;
+    background: rgba(243, 139, 168, 0.1);
+}
+
+#network.ethernet {
+    color: #94e2d5;
+}
+
+#network.wifi {
+    color: #a6e3a1;
+}
