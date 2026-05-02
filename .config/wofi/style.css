@@ -1,42 +1,113 @@
+/* wofi/style.css — Catppuccin Mocha
+   base:    #1e1e2e   surface0: #313244   text:    #cdd6f4
+   mantle:  #181825   surface1: #45475a   subtext: #a6adc8
+   crust:   #11111b   surface2: #585b70   overlay: #6c7086
+   blue:    #89b4fa   mauve:    #cba6f7   red:     #f38ba8
+*/
+
+/* ── Ventana principal ─────────────────────────────────────── */
 window {
-    margin: 0px;
-    border: 2px solid #5e81ac;
-    background-color: #2e3440;
-    border-radius: 10px;
-    font-family: "Fira Code", "Font Awesome 6 Free";
-    font-size: 16px;
-	color: "#000000"
-}
-
-#input {
-    margin: 5px;
-    border: none;
-    color: #eceff4;
-    background-color: #3b4252;
-    border-radius: 5px;
-    padding: 8px;
-}
-
-#inner-box {
-    margin: 5px;
+    background-color: #1e1e2e;
+    border: 1px solid #45475a;
+    border-radius: 14px;
+    font-family: "Fira Code", "Font Awesome 6 Free", sans-serif;
+    font-size: 14px;
+    color: #cdd6f4;
 }
 
 #outer-box {
-    margin: 5px;
+    padding: 12px;
+}
+
+#inner-box {
+    margin: 4px 0 0 0;
 }
 
 #scroll {
-    margin: 0px;
+    margin: 0;
+    border: none;
+}
+
+/* ── Input de búsqueda ─────────────────────────────────────── */
+#input {
+    margin: 0 0 8px 0;
+    padding: 10px 14px;
+    background-color: #313244;
+    border: 1px solid #45475a;
+    border-radius: 10px;
+    color: #cdd6f4;
+    font-size: 14px;
+    outline: none;
+    caret-color: #89b4fa;
+}
+
+#input:focus {
+    border-color: #89b4fa;
+    background-color: #313244;
+}
+
+/* ── Entradas de apps ──────────────────────────────────────── */
+#entry {
+    padding: 6px 8px;
+    border-radius: 8px;
+    margin: 2px 0;
+}
+
+#entry > * {
+    transition: color 0.15s ease;
 }
 
 button {
-    margin: 3px;
-    padding: 8px;
-    color: #eceff4;
-    background-color: #4c566a;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    margin: 1px 0;
+}
+
+button:hover,
+button:focus {
+    background-color: #313244;
+    outline: none;
+}
+
+button:focus #text,
+button:hover #text {
+    color: #cdd6f4;
+}
+
+/* Ítem seleccionado por teclado */
+#entry:selected,
+button:focus > #entry {
+    background-color: #313244;
+    border-left: 2px solid #89b4fa;
     border-radius: 8px;
 }
 
-button:hover {
-    background-color: #5e81ac;
+/* ── Texto e iconos ────────────────────────────────────────── */
+#text {
+    color: #a6adc8;
+    margin-left: 8px;
+    font-size: 13px;
+}
+
+#img {
+    border-radius: 6px;
+    margin-right: 4px;
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────── */
+scrollbar {
+    min-width: 4px;
+    background: transparent;
+}
+
+scrollbar slider {
+    background-color: #45475a;
+    border-radius: 4px;
+    min-height: 20px;
+}
+
+scrollbar slider:hover {
+    background-color: #585b70;
 }

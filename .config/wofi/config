@@ -1,6 +1,19 @@
 [config]
 show=drun
 columns=1
-width=1000
-height=500
+width=520
+height=420
 location=center
+
+# Search
+insensitive=true
+allow_markup=true
+no_actions=true
+prompt= Buscar
+
+# Icons
+allow_images=true
+image_size=28
+
+# Theme
+gtk_dark=true
